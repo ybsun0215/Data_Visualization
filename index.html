@@ -17,10 +17,15 @@
     <div class="bg-white p-4 rounded shadow">关键区域：<strong>Cloud Platform</strong></div>
   </div>
 
-  <!-- 图表区域 -->
-  <canvas id="threatsByLocation" class="mb-8"></canvas>
-  <canvas id="riskLevelPie" class="mb-8"></canvas>
-  <canvas id="threatHeatmap"></canvas>
+  <!-- 图表区域 横向 -->
+  <div class="flex flex-wrap gap-6">
+    <div class="bg-white p-4 rounded shadow flex-1 min-w-[300px]">
+      <canvas id="threatsByLocation"></canvas>
+    </div>
+    <div class="bg-white p-4 rounded shadow w-[400px]">
+      <canvas id="riskLevelPie"></canvas>
+    </div>
+  </div>
 
   <script src="data.js"></script>
   <script src="app.js"></script>
